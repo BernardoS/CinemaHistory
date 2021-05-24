@@ -82,7 +82,8 @@ export default function Home(){
 const styles = StyleSheet.create({
     topic:{
         flex:1,
-        flexDirection:'row'
+        flexDirection:'row',
+        borderBottomColor:''
     },
     topicTitle:{
         color:'#A770FA',
