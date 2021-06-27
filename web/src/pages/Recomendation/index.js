@@ -3,12 +3,12 @@ import React from 'react';
 //local imports
 import './style.css';
 
-const Login = () =>{
+const Recomendation = () =>{
     return(
         <div className="loginContainer">
-            <h1>Login</h1>
+            <h1>Recomendation</h1>
         </div>
     );
 }
 
-export default Login;
+export default Recomendation;

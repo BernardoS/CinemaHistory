@@ -7,6 +7,10 @@
 .configIcon{
     height: 35px;
 }
+.backIcon{
+    height: 35px;
+    display: flex;
+}
 .filmIcon{
     height: 35px;
 }
