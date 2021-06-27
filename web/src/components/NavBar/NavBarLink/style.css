@@ -1,0 +1,12 @@
+.navBarLinkContainer{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 15px 40px;
+}
+.configIcon{
+    height: 35px;
+}
+.filmIcon{
+    height: 35px;
+}

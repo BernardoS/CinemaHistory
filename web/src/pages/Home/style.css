@@ -1,0 +1,62 @@
+.homeContainer{
+    background-color: #00000000;
+    font-family: 'Red Hat Display';
+}
+
+.logo{
+    margin-top: -550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#f6f6f6;
+}
+.logo img{
+    height: 350px;
+    width: 350px;
+}
+.logo h1{
+    margin-top: -60px;
+    font-size: 100px;
+}
+
+
+.cameraIcon{
+    max-height:35px;
+    margin-right: 10px;
+}
+
+
+.firstTopic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.firstTopic h2{
+    font-family: 'Red Hat Display';
+    color:#4B2781;
+    font-size: 35px;
+}
+.firstTopicDiv hr{
+    border: #4B2781 solid 2px;
+    max-width: 10%;
+}
+
+
+.secondTopic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.secondTopic h2{
+    font-family: 'Red Hat Display';
+    color:#FAE01B;
+    font-size: 35px;
+}
+.secondTopicDiv hr{
+    border: #FAE01B solid 2px;
+    max-width: 10%;
+}
