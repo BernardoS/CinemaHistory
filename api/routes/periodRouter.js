@@ -1,5 +1,14 @@
+//library imports
 import {Router} from 'express';
-import { getAllPeriods,getPeriod,createPeriod,deletePeriod,updatePeriod } from '../controllers/periodController.js';
+
+//local imports
+import { 
+    getAllPeriods,
+    getPeriod,
+    createPeriod,
+    deletePeriod,
+    updatePeriod 
+} from '../controllers/periodController.js';
 
 const router = Router();
 

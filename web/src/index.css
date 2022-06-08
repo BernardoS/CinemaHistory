@@ -2,4 +2,13 @@ body{
   padding: 0px;
   margin:0px;
   background-color: black;
+  font-family: 'Red Hat Display';
+}
+:root{
+  --text-white:#f6f6f6;
+  --purple-strong:#4B2781;
+  --purple-weak:#A770FA;
+  --grey-background:#292929be;
+  --grey-input:#595959;
+  --grey-button:#ABABAB;
 }

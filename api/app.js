@@ -1,7 +1,15 @@
+//library imports
 import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
-import periodRouter from './routes/period.js';
+
+//local imports
+import periodRouter from './routes/periodRouter.js';
+//import  filmRouter from './routes/filmRouter.js';
+//import topicRouter from './routes/topicRouter.js';
+//import directorRouter from './routes/directorRouter.js';
+
+
 
 
 export default function appFactory(){
@@ -14,15 +22,21 @@ export default function appFactory(){
 
     //routes configurations
     app.use('/period',periodRouter);
-
-    const CONNECTION_URL = "mongodb+srv://random:159753@clusterteste.qsmmi.mongodb.net/cinemahistory?retryWrites=true&w=majority" 
+    const DB_NAME = "cinemaHistory";
+    const CONNECTION_URL = `mongodb+srv://random:159753@bernardocluster.qsmmi.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`;
     const PORT = process.env.PORT || 8080;
 
     mongoose.connect(CONNECTION_URL,{
         useNewUrlParser:true,
         useUnifiedTopology:true,
         useFindAndModify: false 
-    }).then(()=>app.listen(PORT,()=>console.log(`Server running on port:${PORT}`)))
+    }).then(()=>
+        {
+            app.listen(PORT,()=>{
+                console.log(`Server running on port:${PORT}`)
+            });
+        }
+    )
     .catch((error)=>console.log(error));
 
 }

@@ -1,3 +1,4 @@
+//library imports
 import mongoose from 'mongoose';
 
 const filmDirectorSchema = mongoose.Schema({
@@ -13,4 +14,4 @@ const filmDirectorSchema = mongoose.Schema({
 
 const FilmDirector = mongoose.model('FilmDirector',filmDirectorSchema);
 
-export default filmDirectorSchema;
+export default FilmDirector;

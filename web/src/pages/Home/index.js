@@ -4,7 +4,7 @@ import React from 'react';
 import './style.css';
 import chLogo from '../../images/CinemaIcon_white.png';
 import cameraIconPurple from '../../images/icons/camera_icon_purple.svg';
-import cameraIconYellow from '../../images/icons/camera_icon_yellow.svg';
+
 
 const Home = () =>{
     return(
@@ -23,7 +23,7 @@ const Home = () =>{
             
             <div className="secondTopicDiv">
                 <div className="secondTopic">
-                    <img className="cameraIcon" alt="Camera Icon" src={cameraIconYellow}/>
+                    <img className="cameraIcon" alt="Camera Icon" src={cameraIconPurple}/>
                     <h2>The Birth of Hollywood</h2>
                 </div>
                 <hr/>
