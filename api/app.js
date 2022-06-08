@@ -2,6 +2,7 @@
 import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 
 //local imports
 import periodRouter from './routes/periodRouter.js';
@@ -9,24 +10,26 @@ import periodRouter from './routes/periodRouter.js';
 //import topicRouter from './routes/topicRouter.js';
 //import directorRouter from './routes/directorRouter.js';
 
-
-
-
 export default function appFactory(){
+    
     const app = express();
+    dotenv.config();
 
     //server usage parameters
     app.use(express.urlencoded({limit:"30mb",extended:true}));
     app.use(express.json({limit:"30mb",extended:true}));
     app.use(cors());
 
+    //enviromental variables configurations
+
+
     //routes configurations
     app.use('/period',periodRouter);
-    const DB_NAME = "cinemaHistory";
-    const CONNECTION_URL = `mongodb+srv://random:159753@bernardocluster.qsmmi.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`;
-    const PORT = process.env.PORT || 8080;
 
-    mongoose.connect(CONNECTION_URL,{
+
+    const PORT = process.env.PORT;
+
+    mongoose.connect(process.env.CONNECTION_URL,{
         useNewUrlParser:true,
         useUnifiedTopology:true,
         useFindAndModify: false 
